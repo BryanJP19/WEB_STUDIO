@@ -9,8 +9,8 @@ export const packages = [
 ]
 export const maintenance = [
   { id: 'm1', name: 'Esencial', price: 'RD$500/mes', features: ['Respaldo mensual', 'Revisión de seguridad', 'Cambios menores de texto'] },
-  { id: 'm2', name: 'Plus', price: 'RD$1,000/mes', popular: true, features: ['Todo lo esencial', 'Actualización de fotos y precios', 'Reporte de visitas'] },
-  { id: 'm3', name: 'Total', price: 'RD$2,000/mes', features: ['Todo lo Plus', 'Cambios frecuentes de contenido', 'Soporte prioritario por WhatsApp'] },
+  { id: 'm2', name: 'Intermedio', price: 'RD$1,000/mes', popular: true, features: ['Todo lo esencial', 'Actualización de fotos y precios', 'Reporte de visitas'] },
+  { id: 'm3', name: 'Plus', price: 'RD$2,000/mes', features: ['Todo lo Plus', 'Cambios frecuentes de contenido', 'Soporte prioritario por WhatsApp'] },
 ]
 export const sectors = [
   { id: 's1', icon: '✂️', name: 'Barberías y Salones', text: 'Muestra tus cortes, precios y horarios. Tus clientes reservan por WhatsApp en un toque.' },
