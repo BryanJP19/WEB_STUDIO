@@ -1,0 +1,15 @@
+.sector { display: flex; flex-direction: column; gap: .5rem; padding: 1.5rem; text-align: left; background: var(--bg-dark-card); border: 1px solid var(--border-color); border-radius: var(--radius); transition: transform .25s, box-shadow .25s; }
+.sector:hover, .sector.is-open { transform: translateY(-3px); box-shadow: var(--glow); border-color: var(--primary-cyan); }
+.sector__icon { font-size: 1.8rem; }
+.sector__text { color: var(--text-muted); font-size: .95rem; max-height: 0; overflow: hidden; transition: max-height .3s; }
+.sector.is-open .sector__text { max-height: 160px; }
+@media (hover: hover) { .sector:hover .sector__text { max-height: 160px; } }
+.steps { list-style: none; padding: 0; margin-top: 2rem; display: grid; gap: 1.25rem; counter-reset: s; }
+.steps li { counter-increment: s; position: relative; padding: 1.5rem 1.5rem 1.5rem 4.2rem; background: var(--bg-dark-card); border: 1px solid var(--border-color); border-radius: var(--radius); }
+.steps li::before { content: counter(s); position: absolute; left: 1.25rem; top: 1.4rem; width: 2rem; height: 2rem; display: grid; place-items: center; border-radius: 50%; background: var(--primary-gradient); color: #04121f; font-weight: 800; }
+.steps p { color: var(--text-muted); }
+@media (min-width: 900px) { .steps { grid-template-columns: repeat(4, 1fr); } }
+.faq { margin-top: .75rem; background: var(--bg-dark-card); border: 1px solid var(--border-color); border-radius: var(--radius); }
+.faq button { display: flex; justify-content: space-between; gap: 1rem; width: 100%; min-height: 56px; padding: 1rem 1.25rem; text-align: left; background: none; border: 0; font-weight: 700; }
+.faq button span { color: var(--primary-cyan-light); font-size: 1.4rem; }
+.faq p { padding: 0 1.25rem 1.25rem; color: var(--text-muted); }
