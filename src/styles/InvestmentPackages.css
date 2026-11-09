@@ -1,0 +1,11 @@
+.toggle { display: inline-flex; padding: 4px; background: var(--bg-dark-card); border: 1px solid var(--border-color); border-radius: 999px; }
+.toggle button { min-height: 44px; padding: 0 1.1rem; border: 0; border-radius: 999px; background: none; color: var(--text-muted); font-weight: 700; }
+.toggle button.is-active { background: var(--primary-gradient); color: #04121f; }
+.pkg { position: relative; display: flex; flex-direction: column; padding: 1.75rem; background: var(--bg-dark-card); border: 1px solid var(--border-color); border-radius: var(--radius); transition: transform .25s, box-shadow .25s; }
+.pkg:hover { transform: translateY(-4px); box-shadow: var(--shadow), var(--glow); }
+.pkg--popular { border-color: var(--primary-cyan); box-shadow: var(--glow); }
+.pkg__tag { position: absolute; top: -12px; left: 1.5rem; padding: .15rem .8rem; border-radius: 999px; background: var(--primary-gradient); color: #04121f; font-size: .8rem; font-weight: 800; }
+.pkg__price { margin: .4rem 0 1.2rem; font-size: 1.5rem; font-weight: 800; color: var(--primary-cyan-light); }
+.pkg ul { list-style: none; padding: 0; margin-bottom: 1.5rem; flex: 1; display: grid; gap: .6rem; color: var(--text-muted); }
+.pkg li::before { content: '✓'; margin-right: .6rem; color: var(--primary-cyan-light); }
+.pkg__note { margin-top: 1rem; color: var(--text-muted); font-size: .9rem; }

@@ -1,16 +1,17 @@
 // Datos editables del sitio. Cambia WHATSAPP por tu número (código de país + número, sin símbolos).
 export const WHATSAPP = '18090000000'
-export const waLink = (text) => `https://wa.me/${18094050662}?text=${encodeURIComponent(text)}`
+export const waLink = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`
 
+// Precios base en pesos dominicanos (DOP). El selector de moneda los convierte.
 export const packages = [
-  { id: 'basico', name: 'Básico', price: 'RD$4,500', features: ['Página de una sección', 'Botón directo a WhatsApp', 'Diseño adaptado a móvil', 'Ubicación en Google Maps'] },
-  { id: 'profesional', name: 'Profesional', price: 'RD$8,500', popular: true, features: ['Hasta 5 secciones', 'Galería de fotos y servicios', 'Formulario que envía a WhatsApp', 'Optimización para Google'] },
-  { id: 'premium', name: 'Premium', price: 'RD$15,000 - RD$25,000', features: ['Sitio multipágina a medida', 'Sistema de reservas o catálogo', 'Panel para editar contenido', 'Soporte prioritario'] },
+  { id: 'basico', name: 'Básico', price: 4500, features: ['Página de una sección', 'Botón directo a WhatsApp', 'Diseño adaptado a móvil', 'Ubicación en Google Maps'] },
+  { id: 'profesional', name: 'Profesional', price: 8500, popular: true, features: ['Hasta 5 secciones', 'Galería de fotos y servicios', 'Formulario que envía a WhatsApp', 'Optimización para Google'] },
+  { id: 'premium', name: 'Premium', price: 15000, priceMax: 25000, features: ['Sitio multipágina a medida', 'Sistema de reservas o catálogo', 'Panel para editar contenido', 'Soporte prioritario'] },
 ]
 export const maintenance = [
-  { id: 'm1', name: 'Esencial', price: 'RD$500/mes', features: ['Respaldo mensual', 'Revisión de seguridad', 'Cambios menores de texto'] },
-  { id: 'm2', name: 'Intermedio', price: 'RD$1,000/mes', popular: true, features: ['Todo lo esencial', 'Actualización de fotos y precios', 'Reporte de visitas'] },
-  { id: 'm3', name: 'Plus', price: 'RD$2,000/mes', features: ['Todo lo Plus', 'Cambios frecuentes de contenido', 'Soporte prioritario por WhatsApp'] },
+  { id: 'm1', name: 'Esencial', price: 500, features: ['Respaldo mensual', 'Revisión de seguridad', 'Cambios menores de texto'] },
+  { id: 'm2', name: 'Plus', price: 1000, popular: true, features: ['Todo lo esencial', 'Actualización de fotos y precios', 'Reporte de visitas'] },
+  { id: 'm3', name: 'Total', price: 2000, features: ['Todo lo Plus', 'Cambios frecuentes de contenido', 'Soporte prioritario por WhatsApp'] },
 ]
 export const sectors = [
   { id: 's1', icon: '✂️', name: 'Barberías y Salones', text: 'Muestra tus cortes, precios y horarios. Tus clientes reservan por WhatsApp en un toque.' },
@@ -32,4 +33,18 @@ export const faqs = [
   { q: '¿Cómo funciona el servicio de mantenimiento mensual?', a: 'Pagas una cuota fija y me encargo de respaldos, seguridad y cambios de contenido. Puedes cancelarlo cuando quieras.' },
   { q: '¿Puedo actualizar la información de mi página en el futuro?', a: 'Sí. Puedes pedirme los cambios por WhatsApp o contratar un plan de mantenimiento. El Premium incluye un panel para editar tú mismo.' },
 ]
-export const navLinks = [['inicio', 'Inicio'], ['servicios', 'Servicios'], ['mantenimiento', 'Mantenimiento'], ['sectores', 'Sectores'], ['faq', 'Preguntas Frecuentes']]
+export const navLinks = [['inicio', 'Inicio'], ['servicios', 'Servicios'], ['portafolio', 'Portafolio'], ['paquetes', 'Paquetes'], ['mantenimiento', 'Mantenimiento'], ['sectores', 'Sectores'], ['faq', 'Preguntas Frecuentes']]
+
+// Casos de éxito. Para mostrar una captura real, pon la imagen en /public y agrega image: '/mi-captura.webp'
+export const projects = [
+  { image: '/JP ART.png', id: 'jp-art', name: 'JP Art Desing', type: 'Sitio web para estudio de arte y diseño',
+    text: 'Diseño responsivo con estética cyberpunk / neón creado para transformar la presencia digital de una agencia creativa, ofreciendo una navegación fluida para la contratación de servicios de diseño.', // TODO: ajustar
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind'], // TODO: agrega tu stack real
+    url: 'https://jp-art-desing.vercel.app/', repo: 'https://github.com/BryanJP19/JP_ART_DESING',
+    colors: ['#0f172a', '#7c3aed'] },
+  { image: '/DJ Casper.png', id: 'djcasper', name: 'DJ Casper', type: 'Web para DJ de bodas, fiestas y eventos',
+    text: 'Presentación profesional para eventos en Estados Unidos y República Dominicana, con solicitud de cotización directa por WhatsApp y enlaces a sus redes.',
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+    url: 'https://djcasper.vercel.app/', repo: 'https://github.com/BryanJP19/DJ_Casper',
+    colors: ['#07090D', '#0ea5e9'] },
+]

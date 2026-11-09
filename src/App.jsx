@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
-import Packages from './components/Packages.jsx'
+import PortfolioCases from './components/PortfolioCases.jsx'
+import InvestmentPackages from './components/InvestmentPackages.jsx'
 import Sectors from './components/Sectors.jsx'
 import Process from './components/Process.jsx'
 import FAQ from './components/FAQ.jsx'
@@ -18,7 +19,8 @@ export default function App() {
       <Navbar onContact={() => openModal()} />
       <main>
         <Hero />
-        <Packages onQuote={openModal} />
+        <PortfolioCases />
+        <InvestmentPackages onQuote={openModal} />
         <Sectors />
         <Process />
         <FAQ />
