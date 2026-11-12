@@ -1,5 +1,5 @@
 // Datos editables del sitio. Cambia WHATSAPP por tu número (código de país + número, sin símbolos).
-export const WHATSAPP = '18090000000'
+export const WHATSAPP = '18094050662'
 export const waLink = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`
 
 // Precios base en pesos dominicanos (DOP). El selector de moneda los convierte.
