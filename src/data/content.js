@@ -47,7 +47,7 @@ export const projects = [
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind'],
     url: 'https://djcasper.vercel.app/', repo: 'https://github.com/BryanJP19/DJ_Casper',
     colors: ['#07090D', '#0ea5e9'] },
-  { image: '/Clinica Mely.png', id: 'clinica-mely', name: 'Dra. Mely Santos', type: 'Sitio web para clínica Odontológica en Santo Domingo',
+  { image: '/Clinica Mely1.png', id: 'clinica-mely', name: 'Dra. Mely Santos', type: 'Sitio web para clínica Odontológica en Santo Domingo',
     text: 'Diseño moderno y profesional para clínica odontológica, con información de servicios, equipo y contacto directo por WhatsApp. Optimizado para SEO y presencia en Google Maps.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind'],
     url: 'https://clinicadentalmelysantos.vercel.app/', repo: 'https://github.com/BryanJP19/Clinica_Dental_Mely_Santos',
