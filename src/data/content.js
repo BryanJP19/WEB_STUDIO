@@ -37,19 +37,19 @@ export const navLinks = [['inicio', 'Inicio'], ['servicios', 'Servicios'], ['por
 
 // Casos de éxito. Para mostrar una captura real, pon la imagen en /public y agrega image: '/mi-captura.webp'
 export const projects = [
-  { image: '/JP ART.png', id: 'jp-art', name: 'JP Art Desing', type: 'Sitio web para estudio de arte y diseño',
+  { image: '/JP ART.webp', id: 'jp-art', name: 'JP Art Desing', type: 'Sitio web para estudio de arte y diseño',
     text: 'Diseño responsivo con estética cyberpunk / neón creado para transformar la presencia digital de una agencia creativa, ofreciendo una navegación fluida para la contratación de servicios de diseño.', // TODO: ajustar
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind'], // TODO: agrega tu stack real
     url: 'https://jp-art-desing.vercel.app/', repo: 'https://github.com/BryanJP19/JP_ART_DESING',
     colors: ['#0f172a', '#7c3aed'] },
-  { image: '/DJ Casper.png', id: 'djcasper', name: 'DJ Casper', type: 'Web para DJ de bodas, fiestas y eventos',
+  { image: '/DJ Casper.webp', id: 'djcasper', name: 'DJ Casper', type: 'Web para DJ de bodas, fiestas y eventos',
     text: 'Presentación profesional para eventos en Estados Unidos y República Dominicana, con solicitud de cotización directa por WhatsApp y enlaces a sus redes.',
     stack: ['React', 'Vite', 'TypeScript', 'Tailwind'],
     url: 'https://djcasper.vercel.app/', repo: 'https://github.com/BryanJP19/DJ_Casper',
     colors: ['#07090D', '#0ea5e9'] },
-  { image: '/Clinica Mely.png', id: 'clinica-mely', name: 'Dra. Mely Santos', type: 'Sitio web para clínica Odontológica en Santo Domingo',
+  { image: '/Clinica Mely1.webp', id: 'clinica-mely', name: 'Dra. Mely Santos', type: 'Sitio web para clínica Odontológica en Santo Domingo',
     text: 'Diseño moderno y profesional para clínica odontológica, con información de servicios, equipo y contacto directo por WhatsApp. Optimizado para SEO y presencia en Google Maps.',
-    stack: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind', 'Superbase'],
     url: 'https://clinicadentalmelysantos.vercel.app/', repo: 'https://github.com/BryanJP19/Clinica_Dental_Mely_Santos',
     colors: ['#07090D', '#0ea5e9'] },
 ]
